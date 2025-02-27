@@ -24,31 +24,3 @@ const handleUpdate = (html: string) => {
   console.log('Content updated:', html)
 }
 </script>
-
-<style scoped>
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-}
-
-.preview {
-  margin-top: 20px;
-  padding: 15px;
-  border-top: 1px solid #ddd;
-}
-
-.html-code {
-  background: #f5f5f5;
-  padding: 10px;
-  border-radius: 4px;
-  overflow-x: auto;
-}
-
-.rendered-content {
-  margin-top: 10px;
-  padding: 15px;
-  border: 1px solid #eee;
-  border-radius: 4px;
-}
-</style>

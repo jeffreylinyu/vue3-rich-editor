@@ -61,13 +61,15 @@
 import { defineProps, defineEmits } from 'vue'
 
 /** ============ Props & Emits ============ */
-defineProps({
-  value: {
-    type: String,
-    default: '',
-  },
-})
-const emit = defineEmits(['update-html'])
+interface EditorProps {
+  value: string
+}
+
+defineProps<EditorProps>()
+
+const emit = defineEmits<{
+  (event: 'update-html', value: string): void
+}>()
 
 /** ============ 狀態與常數 ============ */
 let savedRange: Range | null = null // 暫存使用者選取
